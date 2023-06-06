@@ -1,0 +1,86 @@
+#Virtual Environments
+#Carlos Enamorado
+
+
+'''
+This can help solve the problem of needing to run certain programs that require different versions 
+
+Enables you to create an isolated python environment that is not dependent on other vir env or packages installed on the host system
+
+By using virtual environments, you can have multiple verisons of packages installed and useable on the system at the same time
+
+
+
+Install
+
+	pip install virtaulenv
+
+
+	#You may hit an error for Debian; Resolve below:
+	sudo apt install python3-venv
+
+
+
+
+
+Use Virtual Environment
+
+	mkdir VirtualEnv
+
+	cd VirtualEnv
+
+	python3 -m venv env
+
+	source env/bin/activate
+
+
+	┌──(f4th3rl0s㉿kali)-[~/Documents/TCM/VirtualEnv]
+	└─$ source env/bin/activate
+
+	┌──(env)(f4th3rl0s㉿kali)-[~/Documents/TCM/VirtualEnv]
+	└─$   
+
+
+
+
+By Defualt, the virtual environment will not include any of the existing packages
+
+You can double check this by trying to import a package that exists on the main system in the virtual environment. 
+
+For instance the pwn module we downloaded previously on the main operating system
+
+	┌──(env)(f4th3rl0s㉿kali)-[~/Documents/TCM/VirtualEnv]
+	└─$ python3
+	Python 3.11.2 (main, Mar 13 2023, 12:18:29) [GCC 12.2.0] on linux
+	Type "help", "copyright", "credits" or "license" for more information.
+	>>> from pwn import *
+	Traceback (most recent call last):
+	  File "<stdin>", line 1, in <module>
+	ModuleNotFoundError: No module named 'pwn'
+	>>> 
+
+
+
+View all files the env uses to interact with the python env
+
+	ls -laR 
+
+
+
+Verify by using the which command
+
+	┌──(env)(f4th3rl0s㉿kali)-[~/Documents/TCM/VirtualEnv]
+	└─$ which python3
+	/home/f4th3rl0s/Documents/TCM/VirtualEnv/env/bin/python3
+
+	You can also view modules using 'pip freeze' in the env
+
+	#You can also install modules needed in the env just like on the main system using pip
+
+
+You can have multiple env running at the same time for running/testing specific versions of scripts with specific dependencies
+
+
+
+
+Use 'deactivate' to leave the environment

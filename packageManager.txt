@@ -1,0 +1,58 @@
+#Python Package Manager
+#Carlos Enamorado
+
+
+'''
+
+So far we have mainly worked with native functions within Python
+This series goes into building tasks and using fucntions that are not in the standard library 
+Python is very extensible meaning we can leverage existing code packages called modules, to extend and perform a number of functions for us with packages
+
+A package is a bundle of files which are required for a module to work
+Modules are libraries of existing code you can use and call in a program
+Pre-written python code
+
+Examples: http requests, generating random numbers, parsing html for brute-forcing or web scraping
+
+
+
+Pip 
+	Python package manager; pypi.org for packages and installation instructions
+
+
+
+	Example of calling 'pwn' package but not yet installed
+
+	┌──(f4th3rl0s㉿kali)-[~/Documents/TCM]
+	└─$ python3
+	Python 3.11.2 (main, Mar 13 2023, 12:18:29) [GCC 12.2.0] on linux
+	Type "help", "copyright", "credits" or "license" for more information.
+	>>> from  pwn import *
+	Traceback (most recent call last):
+	  File "<stdin>", line 1, in <module>
+	ModuleNotFoundError: No module named 'pwn'
+
+
+	Use 'pip install pwntools' to install the package
+	Use 'pip uninstall pwntools' to uninstall the package
+
+
+	'pip list' - list of all currently installed packages 
+
+	'pip freeze' - better format for intstalling and un-installing specific library versions
+
+	Specify Version using pip
+	'pip install zope.interface==5.5.2'
+
+
+You can also use pip to install multiple packages that are specified within a text file, requirements.txt
+	'pip install -r requirements.txt'
+	A downloaded script may include this text to you to use
+
+
+Try to find an existing module that does the heavy lifting for you for efficiency
+We will look at the sys, requests, and pwntools modules for examples
+
+''''
+
+
