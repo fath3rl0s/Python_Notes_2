@@ -9,7 +9,7 @@ Starting with some basic, foundational knowledge but with a targeted end goal. I
 
 Learn with small, targeted applications
 
-* Recommend having a split view of text editor and terminal open to view outputs as you move along. This stimulates visual and hands-on learning, simultaneously *
+* Recommend having a split view of text editor and terminal open to view outputs as you move along. This stimulates visual and hands-on learning, simultaneously
 
 
 Python_Notes_1 (basic syntax and theory)
