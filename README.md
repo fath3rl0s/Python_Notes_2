@@ -14,7 +14,7 @@ Learn with small, targeted applications
 
 Python_Notes_1 (basic syntax and theory)
 
-Python_Notes_2 (Package Manager, Virtual Environments)
+Python_Notes_2 (Package Manager, Virtual Environments, Intro to SYS, Requests, PWN Tools)
 
 
 Thanks!
