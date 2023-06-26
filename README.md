@@ -16,5 +16,9 @@ Python_Notes_1 (basic syntax and theory)
 
 Python_Notes_2 (Package Manager, Virtual Environments, Intro to SYS, Requests, PWN Tools)
 
+* Putting it all together
+
+Offensive_Python_Projects (SSH Brute Force)
+
 
 Thanks!
